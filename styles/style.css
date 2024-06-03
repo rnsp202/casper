@@ -1,0 +1,146 @@
+/*------------------------------헤더*/
+header {
+    height: 65px; background-color: rgb(255, 255, 255);
+    /* border: 1px solid rebeccapurple; 임시 */
+    padding: 0 24px;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row nowrap;
+    align-items: center;
+    z-index: 999;
+    position: fixed;
+    width: 100%;
+}
+header h1 {}
+header h1 a {}
+header h1 a img{
+    width: 106px;
+}
+/*---------------------------------헤더 내비 컴*/
+header > nav {
+    z-index: 900;
+}
+header > nav .sub_bg {
+    width: 100%; height: 180px;
+    background-color: white;
+    position: absolute; left: 0; top: 60px;
+    /* border-bottom: 1px solid rebeccapurple;임시 */
+}
+header > nav .gnb {
+    width: 650px; 
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row nowrap;
+}
+header > nav .gnb > li:last-child {margin: 0;}
+header > nav .gnb > li {
+    /* 글자수가 달라서 간격 차가 생기므로 여백으로 해결 */
+    font-weight: 700;
+    font-size: 0.92em;
+    /* margin-right: 70px; */
+    position: relative;
+}
+header > nav .gnb > li > a {}
+header > nav .gnb > li > a {}
+header > nav .gnb > li > .sub {
+    /* display: none; */
+    position: absolute;
+    background-color: white;
+    padding-top: 16px;
+}
+header > nav .gnb > li > .sub li {
+    margin-bottom: 10px;
+    width: max-content;
+}
+header > nav .gnb > li > .sub li a {
+    font-size: 0.9em;
+    display: block;
+    /* background-color: aquamarine; */
+    white-space: nowrap;
+}
+header > nav .gnb > li > .sub li a img {
+    width: 140px;
+    border-radius: 5px;
+}
+/*---------------------------------헤더 내비 모바일*/
+header .inb {
+    display: flex;
+    flex-flow: row nowrap;
+}
+header .inb .m_nav {
+    display: none;}
+header .inb .m_nav .all_nav {}
+header .inb .m_nav .all_nav img {
+    width: 24px; height: 24px;
+    margin-right: 8px;
+}
+/*----------------------------*/
+header .lnb .m_nav nav {background-color: aquamarine;
+}
+header .lnb .m_nav nav .sub_bg {}
+header .lnb .m_nav nav .gnb {}
+header .lnb .m_nav nav .gnb > li {}
+header .lnb .m_nav nav .gnb > li > .sub {}
+header .lnb .m_nav nav .gnb > li > .sub li {}
+header .lnb .m_nav nav .gnb > li > .sub li a {}
+header .lnb .m_nav nav .gnb > li > .sub li a img {
+    width: 140px;
+    border-radius: 5px;
+}
+/*------------------------------헤더 inb*/
+header .inb > a {
+    display: block;
+    margin-left: 10px;
+    width: 20px; height: 24px;
+    background-repeat: no-repeat;
+    background-image: url("../images/ico_header.png")
+}
+header .inb .my_menu {
+    margin: 0 6px;
+}
+header .inb .notice {
+    background-position: right top;
+}
+header .inb > a span {display: none;}
+/*------------------------------메인*/
+main {
+    padding-top: 65px;
+}
+/*------------------------------메인 비주얼*/
+main .visual {
+    background-image: url(../images/visual.png);
+    height: calc(100vh - 65px); background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+    /* background-position-x: -30px; */
+    position: relative;
+}
+main .visual .txt {
+    padding-top: 40px;
+    text-align: center;
+    color: #FFF;
+
+}
+main .visual .txt h1 {
+    font-size: 4.5em;
+    font-weight: 800;
+}
+main .visual .txt p {
+    font-size: 1.2em;
+    margin: 25px 0;
+}
+main .visual .txt .link {}
+main .visual .txt .link a {
+    background-color: #002c5f;
+    color: #FFF;
+    font-size: 0.9em;
+    padding: 6px 18px;
+}
+main .visual .scroll {}
+main .visual .scroll img{
+    width: 40px; height: 40px;
+    position: absolute;
+    left: 50%; bottom: 100px;
+    filter: invert(1);
+    animation: move_mouse 0.9s linear infinite alternate;
+}

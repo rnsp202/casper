@@ -1,0 +1,5 @@
+/*============== 메인 */
+@keyframes move_mouse {
+    0%{bottom: 100px;}
+    100%{bottom: 80px;}
+}
