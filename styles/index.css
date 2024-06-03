@@ -1,0 +1,309 @@
+header {
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+}
+header nav {
+    height: 70px;
+    padding: 0 16px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    
+}
+header nav .nav_bg {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    background-color: #fff;
+    width: 100%; height: 0px;
+    transition: all 0.3s;
+}
+header nav h1 {position: relative;}
+header nav .gnb {display: flex;}
+header nav .gnb > li {
+    position: relative;
+    padding-right: 100px;
+}
+header nav .gnb > li > a {
+    display: block;
+    line-height: 40px;
+    font-weight: 700;
+}
+header nav .gnb > li .lnb {
+    width: 100%; top: 55px;
+    position: absolute;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+header nav .gnb > li .lnb li {}
+header nav .gnb > li .lnb li a {
+    display: inline-block;
+    line-height: 30px;
+}
+header nav .gnb li .lnb li a img {width: 100%;}
+header nav .snb {
+    display: flex;
+    position: relative;
+}
+header nav .snb li {}
+header nav .snb li a {
+    display: block;
+    margin-left: 10px;
+    width: 20px; height: 24px;
+    background-image: url("../images/ico_header.png");
+    background-repeat: no-repeat;
+}
+header nav .snb li:first-child a {
+    display: none;
+    width: 24px;
+    background-image: url("../images/m_nav_icon.png");
+    background-size: cover;
+}
+header nav .snb li:last-child a {background-position: right top;}
+/* --------------------------------------01 */
+main .bg1 {
+    position: relative; padding-top: 100px;
+    height: 100vh;
+    background-image: url("../images/visual.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center; color: #fff;
+}
+main .bg1 h1 {
+    font-size: 5rem;
+    font-weight: 700;
+}
+main .bg1 p {
+    margin: 20px 0;
+    font-size: 1.2rem;
+}
+main .bg1 .catalog_btn {}
+main .bg1 .catalog_btn a {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #002c5f; color: #fff;
+}
+main .bg1 .scroll_mouse {
+    position: absolute;
+    bottom: 80px; left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    animation: move_mouse 0.9s linear infinite alternate;
+}
+@keyframes move_mouse {
+    0% {bottom: 80px;}
+    100% {bottom: 100px;}
+}
+main .bg1 .scroll_mouse img {
+    width: 100%;
+}
+/* --------------------------------------02 */
+main .bg2 {
+    padding: 50px 30px;
+    display: flex;
+    justify-content: space-between;
+}
+main .bg2 .left_txt {width: 500px;}
+main .bg2 .left_txt .top {
+    font-size: 2.5rem;
+    line-height: 1.2;
+}
+main .bg2 .left_txt .top em {font-weight: 700;}
+main .bg2 .left_txt .btm {
+    color: #888;
+    font-size: 1.3rem;
+    line-height: 1.3;
+}
+main .bg2 .con02_list {
+    display: flex;
+    padding-bottom: 25px;
+    width: calc(100% - 500px);
+    overflow-y: hidden;
+}
+main .bg2 .con02_list li {
+    margin-right: 30px;
+}
+main .bg2 .con02_list li:last-child {margin: 0}
+main .bg2 .con02_list li a p {
+    margin-bottom: 5px;
+}
+main .bg2 .con02_list li a h2 {
+    font-size: 1.3rem;
+    color: #002c5f;
+    line-height: 1.5;
+}
+main .bg2 .con02_list li a h2 em {
+    margin-left: 5px;
+    padding: 5px;
+    background: #002c5f;
+    color: #fff;
+    font-size: 0.91rem;
+    display: inline-block;
+}
+/* --------------------------------------03 */
+main .bg3 {
+    position: relative;
+    padding-top: 250px;
+    height: 80vh;
+}
+main .bg3 p:first-child{
+    font-size: 15rem;
+    font-weight: 900;
+    color: #ddd;
+    position: absolute;
+    left: 50%; top: 100px;
+    transform: translateX(-50%);
+    z-index: 90;
+}
+main .bg3 p:last-child{
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    z-index: 100;
+    transform: translateX(-50%);
+    text-align: center;
+}
+/* --------------------------------------04 */
+main .bg4 {}
+main .bg4 .con04_01{
+    background-color: #333;
+    padding: 70px 50px;
+}
+main .bg4 .con04_01 h3 {
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    line-height: 1.2;
+    color: #fff;
+}
+main .bg4 .con04_01 > p {
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+    color: #aaa;
+}
+main .bg4 .con04_01 h3 em {
+    font-weight: 700;
+}
+main .bg4 .con04_01 ul {
+    display: flex;
+}
+main .bg4 .con04_01 ul li {
+    margin-right: 10px;
+    width: 32px; height: 32px;
+    border-radius: 50%;
+}
+main .bg4 .con04_01 ul li:nth-child(1) {background-color: #fff;}
+main .bg4 .con04_01 ul li:nth-child(2) {background-color: #aaa;}
+main .bg4 .con04_01 ul li:nth-child(3) {background-color: #888;}
+main .bg4 .con04_02 {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -75px;
+    margin-bottom: 75px;}
+main .bg4 .con04_02_img {
+    width: 80%;
+    max-width: 500px;
+}
+main .bg4 .con04_02_img img {width: 100%;}
+/* --------------------------------------05 */
+main .bg5 {
+    padding: 100px 0;
+    text-align: center;
+    background-color: #f5f5f5;
+}
+main .bg5 h3 {
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    line-height: 1.2;
+}
+main .bg5 h3 em {font-weight: 700;}
+main .bg5 p {
+    margin-bottom: 20px;
+    color: #888;
+    font-size: 1.3rem;
+    line-height: 1.3;
+}
+main .bg5 video {
+    width: 80%;
+    max-width: 800px;
+}
+/* --------------------------------------06 */
+main .bg6 {
+    padding: 100px 30px;
+}
+main .bg6 h3 {
+    margin-bottom: 10px;
+    font-size: 2.5rem;
+    line-height: 1.2;
+}
+main .bg6 h3 em {font-weight: 700;}
+main .bg6 > p {
+    margin-bottom: 10px;
+    color: #888;
+    font-size: 1.3rem;
+    line-height: 1.3;
+}
+main .bg6 > a {
+    display: inline-block;
+    background: #007fa8;
+    color: #fff;
+    padding: 10px 20px;
+    margin-bottom: 50px;
+}
+main .bg6 .car_list {
+    margin: 0 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+main .bg6 .car_list li {
+    text-align: center;
+}
+main .bg6 .car_list li h3 {
+    margin-bottom: 10px;
+    color: #007fa8;
+    font-weight: 700;
+    font-size: 1.3rem;
+    line-height: 1.3;
+}
+main .bg6 .car_list li p {
+    margin-bottom: 10px;
+    line-height: 1.2;
+}
+main .bg6 .car_list li p em {
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+/* --------------------------------------footer */
+footer {
+    display: flex;
+    padding: 50px 30px;
+    background-color: #002c5f;
+}
+footer h1 {
+    margin-bottom: 10px;
+    width: 150px;
+    margin-right: 50px;
+}
+footer h1 img {width: 100%;}
+footer address {
+    width: calc(100% - 200px);
+    color: #fff;
+    
+}
+footer address .ft_adr {display: flex; margin-bottom: 10px;}
+footer address .ft_adr .ft_left {flex: 1;}
+footer address .ft_adr .ft_right {flex: 1;}
+footer address .ft_adr span {
+    display: block;
+    font-size: 0.91rem;
+    line-height: 30px;
+}
+footer address .ft_adr span a {
+    color: #fff;
+    text-decoration: underline;
+}

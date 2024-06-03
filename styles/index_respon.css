@@ -1,0 +1,19 @@
+@media screen and (max-width : 1200px) {
+    header nav .gnb {display: none;}
+    header nav .snb li:first-child a {display: block;}
+}
+@media screen and (max-width : 1000px) {
+    main .bg2 {flex-direction: column;}
+    main .bg2 .con02_list {
+        margin-top: 20px;
+        width: 100%;
+    }
+    main .bg3 {padding-top: 200px;}
+    main .bg3 p:first-child{font-size: 10rem;}
+    main .bg3 p:last-child img{width: 80%;}
+}
+@media screen and (max-width: 800px) {
+    footer {flex-direction: column;}
+    footer address {width: 100%;}
+    footer address .ft_adr {flex-direction: column;}
+}
