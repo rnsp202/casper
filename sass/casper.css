@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
+header {
+  height: 65px;
+  background-color: #fff;
+  padding: 0 24px;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row nowrap;
+  align-items: center;
+  z-index: 999;
+  width: 100%;
+  position: fixed;
+}
+header h1 a img {
+  width: 106px;
+}
+header > nav {
+  z-index: 900;
+}
+header > nav .sub_bg {
+  width: 100%;
+  height: 180px;
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  top: 60px;
+}
+header > nav .gnb {
+  width: 650px;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row nowrap;
+}
+header > nav .gnb li:last-child {
+  margin: 0;
+}
+header > nav .gnb > li {
+  font-weight: 700;
+  font-size: 0.92em;
+  position: relative;
+}
+header > nav .gnb > li > .sub {
+  position: absolute;
+  background-color: #fff;
+  padding-top: 16px;
+}
+header > nav .gnb > li > .sub li {
+  margin-bottom: 10px;
+  width: -moz-max-content;
+  width: max-content;
+}
+header > nav .gnb > li > .sub li a {
+  font-size: 0.9em;
+  display: block;
+  white-space: nowrap;
+}
+header > nav .gnb > li > .sub li a img {
+  width: 140px;
+  border-radius: 5px;
+}
+header .lnb {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row nowrap;
+}
+header .lnb .m_nav {
+  display: none;
+}
+header .lnb .m_nav .all_nav img {
+  width: 24px;
+  height: 24px;
+}
+header .lnb .m_nav nav {
+  position: absolute;
+  right: 0;
+  top: 60px;
+  z-index: 900;
+  width: 460px;
+  background-color: #fff;
+  height: 100vh;
+}
+header .lnb .m_nav nav .gnb {
+  padding: 22px 16px 0 16px;
+}
+header .lnb .m_nav nav .gnb > li {
+  font-weight: 700;
+  font-size: 0.92em;
+  position: relative;
+}
+header .lnb .m_nav nav .gnb > li > a {
+  display: block;
+  padding: 12px 0;
+  width: 100%;
+  border-bottom: 1px solid #888;
+}
+header .lnb .m_nav nav .gnb > li > .sub li {
+  padding: 12px 0;
+  border-bottom: 1px dashed #ccc;
+}
+header .lnb .m_nav nav .gnb > li > .sub li a {
+  font-size: 0.9em;
+  padding-left: 6px;
+}
+header .lnb .m_nav nav .gnb > li > .sub li a img {
+  width: 140px;
+  border-radius: 5px;
+}
+header .lnb > a {
+  display: block;
+  margin-left: 10px;
+  width: 20px;
+  height: 24px;
+  background-repeat: no-repeat;
+  background-image: url("../images/ico_header.png");
+}
+header .lnb > a span {
+  display: none;
+}
+header .lnb .my_menu {
+  margin: 0 6px;
+}
+header .lnb .notice {
+  background-position: right top;
+}
+
+main {
+  padding-top: 65px;
+}
+main .visual {
+  background-image: url(../images/visual.png);
+  height: calc(100vh - 65px);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+main .visual .txt {
+  padding-top: 40px;
+  text-align: center;
+  color: #FFF;
+}
+main .visual .txt h1 {
+  font-size: 4.5rem;
+  font-weight: 800;
+}
+main .visual .txt p {
+  font-size: 1.2rem;
+  margin: 25px 0;
+}
+main .visual .txt .link a {
+  background-color: #002c5f;
+  color: #FFF;
+  font-size: 0.9em;
+  padding: 6px 18px;
+}
+main .visual .scroll img {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  left: 50%;
+  bottom: 100px;
+  filter: invert(1);
+  animation: move_mouse 0.9s linear infinite alternate;
+}
+main .advantage {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row nowrap;
+  padding: 50px 30px;
+}
+main .advantage .title {
+  width: 500px;
+  align-self: flex-start;
+}
+main .advantage .title h1 {
+  font-size: 2.3em;
+  line-height: 1.2;
+}
+main .advantage .title h1 em {
+  font-weight: 700;
+}
+main .advantage .title p {
+  color: #888;
+  font-size: 1.2em;
+  line-height: 1.3;
+}
+main .advantage .contents {
+  display: flex;
+  width: calc(100% - 500px);
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+main .advantage .contents a {
+  margin-right: 30px;
+}
+main .advantage .contents a .photo {
+  margin-bottom: 5px;
+}
+main .advantage .contents a p {
+  font-size: 0.9em;
+  line-height: 1;
+}
+main .advantage .contents a h2 {
+  color: #888;
+  font-size: 1.2em;
+  line-height: 1.3;
+  color: #002c5f;
+  font-weight: 500;
+}
+main .advantage .contents a h2 em {
+  display: inline-block;
+  margin-left: 5px;
+  padding: 5px;
+  background-color: #002c5f;
+  font-size: 0.7em;
+  color: #FFF;
+  font-weight: 400;
+}
+main .design {
+  padding: 100px 15px;
+  position: relative;
+}
+main .design h1 {
+  width: 100%;
+  font-size: 15rem;
+  font-weight: 900;
+  color: #ddd;
+  position: absolute;
+  top: 0;
+  text-align: center;
+  z-index: -1;
+}
+main .design .photo {
+  text-align: center;
+}/*# sourceMappingURL=casper.css.map */

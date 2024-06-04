@@ -2,5 +2,5 @@
     /*데스크탑 메뉴 숨기기*/
     header > nav {display: none;}
     /*모바일 메뉴 보이기*/
-    header .inb .m_nav {display: block;}
+    header .lnb .m_nav {display: block;}
 }

@@ -16,3 +16,6 @@ for(let i of sub){i.style.display = 'none'}
 
 //m_nav 모바일 전용 메뉴의 기존 내비게이션 태그 마지막 자식 복붙
 m_nav.appendChild(nav_clone)
+
+//모바일 전용 메뉴 nav 숨기기
+nav_clone.style.display = 'none'

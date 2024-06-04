@@ -63,14 +63,14 @@ header > nav .gnb > li > .sub li a img {
     border-radius: 5px;
 }
 /*---------------------------------헤더 내비 모바일*/
-header .inb {
+header .lnb {
     display: flex;
     flex-flow: row nowrap;
 }
-header .inb .m_nav {
+header .lnb .m_nav {
     display: none;}
-header .inb .m_nav .all_nav {}
-header .inb .m_nav .all_nav img {
+header .lnb .m_nav .all_nav {}
+header .lnb .m_nav .all_nav img {
     width: 24px; height: 24px;
     margin-right: 8px;
 }
@@ -87,21 +87,21 @@ header .lnb .m_nav nav .gnb > li > .sub li a img {
     width: 140px;
     border-radius: 5px;
 }
-/*------------------------------헤더 inb*/
-header .inb > a {
+/*------------------------------헤더 lnb*/
+header .lnb > a {
     display: block;
     margin-left: 10px;
     width: 20px; height: 24px;
     background-repeat: no-repeat;
     background-image: url("../images/ico_header.png")
 }
-header .inb .my_menu {
+header .lnb .my_menu {
     margin: 0 6px;
 }
-header .inb .notice {
+header .lnb .notice {
     background-position: right top;
 }
-header .inb > a span {display: none;}
+header .lnb > a span {display: none;}
 /*------------------------------메인*/
 main {
     padding-top: 65px;

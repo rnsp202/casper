@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+@import 'common';
+//common.scss 변수 및 mixin 이용해서 중첩 선택자 규칙으로 디자인 만들기
+header {
+    height: 65px; background-color: $bg1;
+    padding: 0 24px;
+    @include flex-r;
+    align-items: center;
+    z-index: 999;
+    width: 100%;
+    position: fixed;
+    h1 {
+        a {
+            img {width: 106px}
+        }
+    }
+    > nav {z-index: 900;
+        .sub_bg {
+            width: 100%; height: 180px;
+            background-color: $bg1;
+            position: absolute; left: 0; top: 60px;
+        }
+        .gnb {
+            width: 650px; 
+            @include flex-r;
+            li:last-child {margin: 0;}
+            > li {
+                font-weight: 700;
+                font-size: 0.92em;
+                position: relative;
+                a {}
+                > .sub {
+                    position: absolute;
+                    background-color: $bg1;
+                    padding-top: 16px;
+                    li {
+                        margin-bottom: 10px;
+                        width: max-content;
+                        a {
+                            font-size: 0.9em;
+                            display: block;
+                            white-space: nowrap;
+                            img {
+                                width: 140px;
+                                border-radius: 5px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .lnb {
+        @include flex-r;
+        .m_nav {
+            display: none;
+            .all_nav {
+                img {@include icon;}
+            }
+            nav {
+                // display: none;
+                position: absolute;
+                right: 0; top: 60px;
+                z-index: 900;
+                width: 460px;
+                background-color: $bg1;
+                height: 100vh;
+                .gnb {
+                    padding: 22px 16px 0 16px;
+                    > li {
+                        font-weight: 700;
+                        font-size: 0.92em;
+                        position: relative;
+                        > a {
+                            display: block;
+                            padding: 12px 0;
+                            width: 100%;
+                            border-bottom: 1px solid #888;
+                        }
+                        > .sub {
+                            // display: none;
+                            li {
+                                padding:12px 0;
+                                border-bottom:$br_dash ;
+                                a {
+                                    font-size: 0.9em;
+                                    padding-left: 6px;
+                                    img {
+                                        width: 140px;
+                                        border-radius: 5px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        > a {
+            display: block;
+            margin-left: 10px;
+            width: 20px; height: 24px;
+            background-repeat: no-repeat;
+            background-image: url("../images/ico_header.png")
+        }
+        > a {span {display: none;}}
+        .my_menu {margin: 0 6px;}
+        .notice {background-position: right top;}
+    }
+}
+main {
+    padding-top: 65px;
+    .visual {
+        background-image: url(../images/visual.png);
+        height: calc(100vh - 65px);
+        @include bg-img;
+        position: relative;
+        .txt {
+            padding-top: 40px;
+            text-align: center;
+            color: #FFF;
+            h1 {
+                font-size: 4.5rem;
+                font-weight: 800;
+            }
+            p {
+                font-size: 1.2rem;
+                margin: 25px 0;
+            }
+            .link {
+                a {
+                    background-color: $naevy;
+                    color: #FFF;
+                    font-size: 0.9em;
+                    padding: 6px 18px;
+                }
+            }
+        }
+        .scroll {
+            img {
+                width: 40px; height: 40px;
+                position: absolute;
+                left: 50%; bottom: 100px;
+                filter: invert(1);
+                animation: move_mouse 0.9s linear infinite alternate;
+            }
+        }
+    }
+    .advantage {
+        @include flex-r;
+        padding: 50px 30px;
+        .title { 
+            // background-color: antiquewhite;
+            width: 500px;
+            align-self: flex-start;
+            h1 {
+                @include title_lv1;
+                em {font-weight: 700;}
+            }
+            p {
+                @include title_lv2;
+            }
+        }
+        .contents {
+            display: flex;
+            width: calc(100% - 500px);
+            overflow-x: auto;
+            overflow-y: hidden;
+            a {margin-right: 30px;
+                .photo {margin-bottom: 5px;
+                    img {}
+                }
+                p {
+                    font-size: 0.9em;
+                    line-height: 1;
+                    img {}
+                }
+                h2 {@include title_lv2;
+                    color: $naevy;
+                    font-weight: 500;
+                    em {
+                        display: inline-block;
+                        margin-left: 5px;
+                        padding: 5px;
+                        background-color: $naevy;
+                        font-size: 0.7em;
+                        color: #FFF;
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+    }
+    .design {padding: 100px 15px; position: relative;
+        h1 { 
+            // background: cadetblue;
+            width: 100%;
+            font-size: 15rem; font-weight: 900;
+            color: #ddd;
+            position: absolute; top: 0;
+            text-align: center;
+            z-index: -1;
+        }
+        .photo {text-align: center;
+            img {}
+        }
+    }
+}
