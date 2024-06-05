@@ -31,8 +31,9 @@ header {
                 a {}
                 > .sub {
                     position: absolute;
-                    background-color: $bg1;
+                    // background-color: $bg1;
                     padding-top: 16px;
+                    height: 180px;
                     li {
                         margin-bottom: 10px;
                         width: max-content;

@@ -41,8 +41,8 @@ header > nav .gnb > li {
 }
 header > nav .gnb > li > .sub {
   position: absolute;
-  background-color: #fff;
   padding-top: 16px;
+  height: 180px;
 }
 header > nav .gnb > li > .sub li {
   margin-bottom: 10px;
